@@ -1,2 +1,140 @@
-# ssh-config-bastion
-This project allows the user to connect to a resource behind a bastion host from their localhost.
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+
+  <h3 align="center">SSH Config Bastion</h3>
+
+  <p align="center">
+    This projects helps users set up a connection to a resource behind a bastion server. This is especially useful when trying to connect to a database via localhost using port-forwarding through the bastion server.
+    <br />
+    <a href="https://github.com/jasoncorneliog/ssh-config-bastion"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jasoncorneliog/ssh-config-bastion/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jasoncorneliog/ssh-config-bastion/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Here's a blank template to get started:
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+`jasoncorneliog`, `ssh-config-bastion`
+
+### Built With
+
+- [Bash](https://www.gnu.org/software/bash/)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- If you're accessing a bastion server, ensure that your IPV4 address is whitelisted by the server.
+- If you're using this to connect to a database, make sure you install the respective database client on your computer.
+
+### Installation
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/jasoncorneliog/ssh-config-bastion.git
+```
+
+2. Place the .pem key under the /Port_Forwarding folder.
+
+3. Configure the ssh_config file by editing the following fields
+
+```
+database_name - Change it to your preferred alias of the database.
+bastion_ip - Change this to the IP of the bastion server.
+user_name - Change this to your default username.
+secret.pem - Rename this to the filename discussed in step 2.
+db_port - Port of the database.
+database_host.amazonaws.com - The name of the database you're trying to connect to.
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Run the shell script within the /Port_Forwarding folder to update ssh-config.
+
+```
+cd Port_Forwarding
+sh port_forward.sh
+```
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/jasoncorneliog/ssh-config-bastion/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Jason Cornelio - [@linkedin](https://www.linkedin.com/in/jasoncornelio)
+
+Project Link: [https://github.com/jasoncorneliog/ssh-config-bastion](https://github.com/jasoncorneliog/ssh-config-bastion)

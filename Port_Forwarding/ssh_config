@@ -1,0 +1,14 @@
+Host database_name
+    HostName bastion_ip
+    Port 22
+    User user_name
+    IdentityFile ~/.ssh/secret.pem
+    LocalForward  db_port database_host.amazonaws.com:db_port
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+
+Host bastion
+    HostName bastion_ip
+    Port 22
+    User user_name
+    IdentityFile ~/.ssh/secret.pem
