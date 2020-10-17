@@ -10,8 +10,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/ssh-background-logo.png" alt="Logo" width="200" height="200">
+  <a href="https://github.com/jasoncorneliog/ssh-config-bastion">
+    <img src="images/ssh-background.png" alt="Logo" width="400" height="400">
   </a>
   <h3 align="center">SSH Config Bastion</h3>
 
