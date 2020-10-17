@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jasoncorneliog/ssh-config-bastion">
-    <img src="images/ssh-background-updated.png" alt="Logo" width="400" height="400">
+    <img src="images/ssh-background-updated.png" alt="Logo" width="100" height="100">
   </a>
   <h3 align="center">SSH Config Bastion</h3>
 
