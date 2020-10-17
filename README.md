@@ -7,13 +7,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -51,12 +44,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`jasoncorneliog`, `ssh-config-bastion`
 
 ### Built With
 
@@ -135,6 +122,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Jason Cornelio - [@linkedin](https://www.linkedin.com/in/jasoncornelio)
+Jason Cornelio - [LinkedIn](https://www.linkedin.com/in/jasoncornelio)
 
 Project Link: [https://github.com/jasoncorneliog/ssh-config-bastion](https://github.com/jasoncorneliog/ssh-config-bastion)
