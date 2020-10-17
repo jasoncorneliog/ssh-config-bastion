@@ -59,7 +59,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Please follow the below steps, if applicable.
 
 - If you're accessing a bastion server, ensure that your IPV4 address is whitelisted by the server.
 - If you're using this to connect to a database, make sure you install the respective database client on your computer.
