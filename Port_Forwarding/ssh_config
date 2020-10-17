@@ -1,4 +1,4 @@
-Host database_name
+Host database
     HostName bastion_ip
     Port 22
     User user_name

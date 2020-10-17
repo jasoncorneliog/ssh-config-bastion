@@ -70,12 +70,12 @@ This is an example of how to list things you need to use the software and how to
 git clone https://github.com/jasoncorneliog/ssh-config-bastion.git
 ```
 
-2. Place the .pem key under the /Port_Forwarding folder.
+2. Rename your .pem key to secret.pem, and Place the secret.pem key under the /Port_Forwarding folder.
 
-3. Configure the ssh_config file by editing the following fields. You can CTRL + F the following and replace it with your respective variables.
+3. Configure the /Port_Forwarding/ssh_config file by editing the following fields. You can CTRL + F the following and replace it with your respective variables. If you changed the database name, change it in the port_forward.sh file too.
 
 ```
-database_name - Change it to your preferred alias of the database.
+database - Change it to your preferred alias of the database.
 bastion_ip - Change this to the IP of the bastion server.
 user_name - Change this to your default username.
 secret.pem - Rename this to the filename discussed in step 2.

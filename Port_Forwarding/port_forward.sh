@@ -9,13 +9,13 @@ check_ssh_directory(){
     fi
 
     echo "Transfer private key to ~/.ssh folder \n\n"
-    if [ ! -f ./cmubaymax.pem ]; then
-        echo "Please place cmubaymax.pen file in this folder \n\n"
+    if [ ! -f ./secret.pem ]; then
+        echo "Please place secret.pen file in this folder \n\n"
         exit
     else
         echo "Copying pem file to ~/.ssh folder \n\n"
-        cp cmubaymax.pem $HOME/.ssh/cmubaymax.pem
-        chmod 400 $HOME/.ssh/cmubaymax.pem
+        cp secret.pem $HOME/.ssh/secret.pem
+        chmod 400 $HOME/.ssh/secret.pem
         echo "Copying identity file done! \n\n"
     fi
 }
@@ -53,11 +53,11 @@ fi
 
 autossh_config(){
 echo "Creating port forwarding for Redshift database, so that it can be accessed locally \n\n"
-autossh -M 0 -f -T -N cmubaymax
+autossh -M 0 -f -T -N database
 
 echo "Port forwarding enabled. The following commands can be used: \n"
 echo "1. Enter the command 'ssh bastion' to connect to bastion server \n"  
-echo "2. Enter the command 'psql -h localhost -p 5439 -U cmubaymax -W anki' to connect to the Redshift database \n"
+echo "2. Enter the command 'psql -h localhost -p 5439 -U database -W database_name' to connect to a postgres database \n"
 }
 
 # Checks if SSH directory is present and tries to transfer PEM key to it
