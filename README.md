@@ -47,7 +47,7 @@
 
 ### Built With
 
-- [Bash](https://www.gnu.org/software/bash/)
+- [Shell](https://www.gnu.org/software/bash/)
 
 <!-- GETTING STARTED -->
 
@@ -72,7 +72,7 @@ git clone https://github.com/jasoncorneliog/ssh-config-bastion.git
 
 2. Place the .pem key under the /Port_Forwarding folder.
 
-3. Configure the ssh_config file by editing the following fields
+3. Configure the ssh_config file by editing the following fields. You can CTRL + F the following and replace it with your respective variables.
 
 ```
 database_name - Change it to your preferred alias of the database.
@@ -116,7 +116,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 
